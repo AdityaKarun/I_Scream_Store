@@ -1,6 +1,6 @@
 # I_Scream Store
 
-A simple Django project showcasing a website and a blogpage for an I-Scream Store. This repository focuses on the Django framework and contains two apps: `store` and `blogs`.
+A simple Django project showcasing a website and a blogpage for the I-Scream Store. This repository focuses on the Django framework and contains two apps: `store` and `blogs`.
 
 ## Features
 
@@ -33,8 +33,9 @@ A simple Django project showcasing a website and a blogpage for an I-Scream Stor
 
 - **Language:** Python (3.8+ recommended)
 - **Framework:** Django (see `requirements.txt` for the pinned version)
-- **Database:** SQLite (`db.sqlite3`)
+- **Database:** SQLite
 - **Templates / Static:** Django templates and app-level static files
+- **Bootstrap:** For prebuilt CSS and JS
 
 ## Installation & Usage
 
@@ -62,4 +63,4 @@ python3 manage.py runserver 0.0.0.0:8000
 
 ##
 
-<center>The I-Scream-Project. Enjoy! 🍦 </center>
+<div align="center">The I-Scream-Project. Enjoy! 🍦</div>
