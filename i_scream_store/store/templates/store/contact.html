@@ -1,0 +1,36 @@
+{% extends "store/base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<h1 class="text-center mb-4">Reach Out To Us</h1>
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }}" role="alert">
+  {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+
+<form method="post">
+  {% csrf_token %}
+
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" placeholder="Your name" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" placeholder="example@email.com" required>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Message</label>
+    <textarea name="message" class="form-control" rows="4" placeholder="Type your message..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+{% endblock %}

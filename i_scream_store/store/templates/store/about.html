@@ -1,0 +1,94 @@
+{% extends "store/base.html" %}
+{% load static %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<h1 class="text-center mb-4">About I-Scream Store</h1>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Our Story</h3>
+    <p class="card-text">
+      Founded in 2010, I-Scream Store began as a small family-owned ice cream parlor with a passion for creating 
+      unforgettable frozen treats. What started in a tiny shop has grown into a beloved destination for ice cream 
+      lovers across the region.
+    </p>
+    <p class="card-text">
+      Our name comes from the joyful screams of delight when customers taste our creations for the first time. 
+      We believe ice cream should bring happiness, spark conversations, and create lasting memories.
+    </p>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h3 class="card-title">Our Mission</h3>
+    <p class="card-text">
+      To craft the finest ice cream experiences using premium ingredients, innovative flavors, and a commitment 
+      to quality that keeps our customers coming back for more. We source locally whenever possible and never 
+      compromise on taste.
+    </p>
+  </div>
+</div>
+
+<div class="container my-5">
+  <h3 class="text-center mb-4">Our Store Locations</h3>
+  <div class="row justify-content-center g-4">
+
+    <div class="col-12 col-md-4">
+      <div class="card text-center shadow-sm h-100">
+        <img src="{% static 'store/images/store_img_1.png' %}" class="card-img-top" alt="Bengaluru Store">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Bengaluru</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card text-center shadow-sm h-100">
+        <img src="{% static 'store/images/store_img_2.png' %}" class="card-img-top" alt="Hyderabad Store">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Hyderabad</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card text-center shadow-sm h-100">
+        <img src="{% static 'store/images/store_img_3.png' %}" class="card-img-top" alt="Chennai Store">
+        <div class="card-body">
+          <h5 class="card-title fw-semibold">Patna</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row mb-4">
+  <div class="col-md-4 mb-3">
+    <div class="card text-center h-100">
+      <div class="card-body">
+        <h2 class="text-primary">50+</h2>
+        <p class="card-text">Unique Flavors</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card text-center h-100">
+      <div class="card-body">
+        <h2 class="text-primary">15</h2>
+        <p class="card-text">Years in Business</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card text-center h-100">
+      <div class="card-body">
+        <h2 class="text-primary">10K+</h2>
+        <p class="card-text">Happy Customers</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
