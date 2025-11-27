@@ -1,14 +1,16 @@
 # I_Scream Store
 
-A simple Django project showcasing a website and a blogpage for the I-Scream Store. This repository focuses on the Django framework and contains two apps: `store` and `blogs`.
+A Django web application for I-Scream Store — an ice cream shop's digital presence. This project demonstrates modern web development practices with Django, featuring a public-facing storefront with company information and contact capabilities, alongside a protected blog platform for authenticated users. Built with two distinct Django apps `store` and `blogs`, it showcases user authentication, form handling, and responsive design with Bootstrap.
 
 ## Features
 
-- Built with Django.
+- Built with Django
 - Two apps:
   - `store`
   - `blogs`
-- Uses SQLite as database (`db.sqlite3`).
+- User authentication system (signup, signin, signout)
+- Contact form for user messages
+- Responsive design with Bootstrap
 
 ## Screenshots
 
@@ -25,9 +27,15 @@ A simple Django project showcasing a website and a blogpage for the I-Scream Sto
 
 - `i_scream_store/` — Django project settings and URLs.
 - `store/` — store app: views, templates, static files.
+  - Home page
+  - About Us page
+  - Careers page
+  - Contact Us page
 - `blogs/` — blog app: views, templates, static files.
-- `db.sqlite3` — development database (SQLite).
-- `requirements.txt` — Python dependencies.
+  - Authentication-protected blog posts
+  - User signup and signin functionality
+- `db.sqlite3` — Database
+- `requirements.txt` — Python Dependencies
 
 ## Tech Stack
 
@@ -36,6 +44,7 @@ A simple Django project showcasing a website and a blogpage for the I-Scream Sto
 - **Database:** SQLite
 - **Templates / Static:** Django templates and app-level static files
 - **Bootstrap:** For prebuilt CSS and JS
+- **Authentication:** Django's built-in authentication system
 
 ## Installation & Usage
 
@@ -60,7 +69,8 @@ python3 manage.py migrate
 python3 manage.py createsuperuser
 python3 manage.py runserver 0.0.0.0:8000
 ```
+Visit http://127.0.0.1:8000/ to view the store and http://127.0.0.1:8000/blogs/ for the blog section (requires login).
 
 ##
 
-<div align="center">The I-Scream Store. Enjoy! 🍦</div>
+<div align="center">I-Scream Store. Enjoy! 🍦</div>
